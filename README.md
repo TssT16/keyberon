@@ -62,7 +62,8 @@ change `set _CPUTAPID 0x1ba01477` to `set _CPUTAPID 0x2ba01477`
 openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/target/stm32f1x.cfg
 telnet localhost 4444
 reset halt
-flash write_image erase /root/keyboard/blue-pill-quickstart/target/thumbv7m-none-eabi/debug/blue-pill-quickstart.d 0x08000000
+cd keyboard/keyberon/;cargo run --release --example keyberon48
+Not that: flash write_image erase /root/keyboard/blue-pill-quickstart/target/thumbv7m-none-eabi/debug/blue-pill-quickstart.d 0x08000000
 ```
 
 Layer 0:
