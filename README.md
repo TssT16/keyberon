@@ -52,6 +52,11 @@ My keyboard doesn't (yet) play any music, that's purely aesthetics.
 
 As an old user of the [TypeMatrix 2030](http://www.typematrix.com/2030/features.php), the layout is quite close of the layout of the TypeMatrix. I also maximize the use of the thumbs by having shift, space, enter, alt, alt gr, gui and backspace on the thumbs.
 
+## Problem Error: expected 1 of 1: 0x1ba01477
+when using: `openocd -f /usr/share/openocd/scripts/interface/stlink-v2.cfg -f /usr/share/openocd/scripts/target/stm32f1x.cfg`  
+`nano /usr/share/openocd/scripts/target/stm32f1x.cfg`  
+change `set _CPUTAPID 0x1ba01477` to `set _CPUTAPID 0x2ba01477`
+
 Layer 0:
 ```
 ┌────┬────┬────┬────┬────┬────╥────┬────┬────┬────┬────┬────┐
